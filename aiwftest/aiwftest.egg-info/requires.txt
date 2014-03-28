@@ -1,0 +1,6 @@
+pyramid
+transaction
+pymongo
+pyramid_tm
+pyramid_debugtoolbar
+waitress

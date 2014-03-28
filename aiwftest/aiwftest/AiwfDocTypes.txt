@@ -1,0 +1,73 @@
+// ====================================================
+//
+Renamed Activity to Event.
+{
+    "Event": {
+      "Title"         : "Event No 1",
+      "Text"          : "Event No 1 Details",
+      "EventStartDate": "2014-03-17T00:00:00.0.25Z",
+      "EventEndDate"  : "2014-03-18T00:00:00.0.25Z",
+      "CreatedDate"   : "2014-03-15T13:07:56.0.25Z",
+      "PubDate"       : "2014-03-15T20:29:50.0.25Z",
+      "ShowDate"      : "2014-03-01T14:00:00.0.25Z",
+      "EndShowDate"   : "2014-04-17T06:00:00.0.25Z",
+      "Feautured"     : true
+    }
+}
+// ===================================================
+//
+// Thought. What if all of these are type Page.
+// Page has a PageType.
+// Using the current Aiwf site terminology (ish)
+//
+// PageType - Event
+// PageType - Newsletter
+//            Same as Event with PdfFile link
+// PageType - PressNotice
+// PageType - MediaCoverage
+// PageType - ConferencePaper [speeches]
+// PageType - Booklet
+// PageType - Blank?
+//
+// ===================================================
+{
+    "Newsletter": {
+      "Title" : "Newsletter Title No 1",
+      "Text"  : "Newsletter Details",
+      "EventStartDate": "2014-03-17T00:00:00.0.25Z",
+      "EventEndDate": "2014-03-18T00:00:00.0.25Z",
+      "CreatedDate": "2014-03-15T13:07:56.0.25Z",
+      "PubDate": "2014-03-15T20:29:50.0.25Z",
+      "ShowDate": "2014-03-01T14:00:00.0.25Z",
+      "EndShowDate": "2014-04-17T06:00:00.0.25Z",
+      "PdfUrl": "/Newsletters/filename.pdf"
+      "Feautured": true
+    }
+}
+//
+// Taken from the AIWF site.
+//
+// Events
+//
+Title: Text
+Description: Text
+Event Short Summary: Text
+Event Dates: {'EventDate':{EventStartDate: "2014-04-17T06:00:00.0.25Z", EventEndDate: "2014-04-17T06:00:00.0.25Z"}
+Location: {'Street': "", 'City': "", 'Country': ""}
+Contact Personal Info: {'Name': "", 'Email': "", 'Phone': "", 'Cell': "", 'Web': ""}
+Schedule: {EventStartDate, EventEndDate, PubDate, EndShowDate}
+Category: Text
+Tags: Text
+//
+// News
+//
+Title: Text
+Content: Text
+Category: Text
+Tags: Text
+Additional Info: {'Summary': "", 'Author': "", 'Source': "", 'Thumbnail': "" }
+Schedule: {EventStartDate, EventEndDate, PubDate, EndShowDate}
+//
+// Quotes
+Quote:
+Fullname:
